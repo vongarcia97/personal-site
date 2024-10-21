@@ -197,8 +197,8 @@ export default function Home() {
 
         <section className="space-y-20">
           <NumberGradient
-            gradient={3}
-            number={3}
+            gradient={2}
+            number={2}
             title="Hobbies and Interests"
           />
           <VerticalTimeline lineColor="">
@@ -239,6 +239,10 @@ export default function Home() {
               </React.Fragment>
             ))}
           </VerticalTimeline>
+        </section>
+
+        <section>
+          <NumberGradient gradient={3} number={3} title="Hobbies" />
         </section>
       </div>
 

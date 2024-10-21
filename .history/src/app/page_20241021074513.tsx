@@ -25,7 +25,7 @@ import {
   AiTwotoneCalendar,
   AiOutlineMail,
 } from "react-icons/ai";
-import { Experience, Interests } from "@/lib/data";
+import { Experience } from "@/lib/data";
 
 export default function Home() {
   const [gradientColor, setGradientColor] = useState(1);
@@ -101,7 +101,7 @@ export default function Home() {
                 : "from-gradient-3-from to-gradient-3-to"
             }`}
           >
-            React.js
+            ReactJS
           </span>{" "}
           &{" "}
           <span
@@ -195,50 +195,8 @@ export default function Home() {
           </VerticalTimeline>
         </section>
 
-        <section className="space-y-20">
-          <NumberGradient
-            gradient={3}
-            number={3}
-            title="Hobbies and Interests"
-          />
-          <VerticalTimeline lineColor="">
-            {Interests.map((value) => (
-              <React.Fragment key={value.id}>
-                <VerticalTimelineElement
-                  contentStyle={{
-                    background: "#0A0A0A",
-                    border: "0.5px solid rgba(255, 255, 255, .20)",
-                    boxShadow: "none",
-                    borderRadius: "12px",
-                  }}
-                  contentArrowStyle={{
-                    display: "none",
-                  }}
-                  date={value.date}
-                  icon={value.icon}
-                  iconStyle={{
-                    background: "black",
-                    fontSize: "15rem",
-                    boxShadow: "none",
-                  }}
-                  dateClassName="date"
-                >
-                  <Text as="h3" size={24}>
-                    {value.title}
-                  </Text>
-                  <Text variant={"muted-sm"} className="!mt-1 !text-xs">
-                    {value.subtitle}
-                  </Text>
-                  <Text
-                    className="!mt-2 !text-sm !leading-6"
-                    variant={"muted-sm"}
-                  >
-                    {value.description}
-                  </Text>
-                </VerticalTimelineElement>
-              </React.Fragment>
-            ))}
-          </VerticalTimeline>
+        <section>
+          <NumberGradient gradient={3} number={3} title="Hobbies" />
         </section>
       </div>
 

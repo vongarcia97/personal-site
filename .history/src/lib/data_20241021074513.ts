@@ -1,5 +1,5 @@
 import React from "react";
-import { FaEarthAmericas, FaCode, FaBriefcase, FaRightLeft, FaFutbol, FaPlane, FaBowlRice, FaCarRear } from "react-icons/fa6";
+import { FaEarthAmericas, FaCode, FaBriefcase, FaRightLeft } from "react-icons/fa6";
 
 const ServiceINITIAL_VALUE = [
   {
@@ -40,34 +40,4 @@ const Experience = [
   },
 ];
 
-const Interests = [
-  {
-    id: 1,
-    title: "Weekend Chef",
-    subtitle: "Trying out my take on different cuisines on the weekends",
-    description:
-      "Whatever I see that makes my mouth water on my Instagram Discover Page or TikTok algo, I try to make it. To give an idea of how daring I am - I've made bao buns from scratch and prepare my own Salmon sashimi at home.",
-    date: "Since 2019",
-    icon: React.createElement(FaBowlRice),
-  },
-  {
-    id: 2,
-    title: "Formula One - McLaren Racing Team",
-    subtitle: "What can I say? Drive To Survive is just THAT good....",
-    description:
-      "I've always admired the engineering that goes into making a Formula One car. I chose to support McLaren because that team has pedigree and I want to see them back on top! I'm excited to see Lando Norris put up a challenge for Max in the World Championship.",
-    date: "Since 2020",
-    icon: React.createElement(FaCarRear),
-  },
-  {
-    id: 3,
-    title: "Liverpool FC",
-    subtitle: "You'll Never Walk Alone!",
-    description:
-      "I started following Liverpool FC because of their history and the fact that they were the underdogs. I've been a fan since 2018, when we lost to Real Madrid on the Champion's League Final. I've been through the highs and lows of the team. I hated seeing Jurgen Klopp leave, but I'm excited to see what the future holds for the team!",
-    date: "Since 2018",
-    icon: React.createElement(FaFutbol),
-  },
-];
-
-export { ServiceINITIAL_VALUE, Experience, Interests };
+export { ServiceINITIAL_VALUE, Experience };
