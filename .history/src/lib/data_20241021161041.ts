@@ -74,8 +74,8 @@ const Interests = [
     subtitle: "This has been a passion of mine even before I started working in the travel industry.",
     description:
       "I was born and raised in the Philippines, and I have always been fascinated by different cultures. I am also a self-proclaimed 'points hack' specialist, my latest steal was two Premium Comfort seats to Rome for ~60k points for me and my wife! I'm blessed to have visited beautiful places such as Paris, Nice, Barcelona and Priorat - but Gozo, Malta is what I consider to be paradise!",
-    date: "",
-    icon: React.createElement(FaPlane),
+    date: "Since 2018",
+    icon: React.createElement(FaFutbol),
   },
 ];
 
