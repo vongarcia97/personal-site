@@ -140,7 +140,7 @@ export default function Home() {
             id="reveal-text"
           >
             I&apos;m Von Garcia! I&apos;ve got 3+ years of dev experience,
-            building fullstack applications with React.js. Currently, I am an
+            building fullstack applications with ReactJS. Currently, I am an
             employee of AMEX-GBT working for{" "}
             <a className="text-teal-400" href="https://theovationnetwork.com/">
               The OvationNetwork

@@ -140,7 +140,7 @@ export default function Home() {
             id="reveal-text"
           >
             I&apos;m Von Garcia! I&apos;ve got 3+ years of dev experience,
-            building fullstack applications with React.js. Currently, I am an
+            building fullstack applications with ReactJS. Currently, I am an
             employee of AMEX-GBT working for{" "}
             <a className="text-teal-400" href="https://theovationnetwork.com/">
               The OvationNetwork
@@ -310,16 +310,10 @@ export default function Home() {
         </Container>
         <Text
           variant={"section-name"}
-          className="mb-10 flex flex-row justify-center text-[8px] md:text-lg items-center"
+          className="mb-10 flex flex-row justify-center text-sm md:text-lg text-center"
         >
-          Von Garcia | New York, NY |{" "}
-          <Link href="https://github.com/vongarcia97">
-            <AiFillGithub className="mx-2" />
-          </Link>{" "}
-          |
-          <Link href="https://linkedin.com/in/vongarcia97">
-            <AiFillLinkedin className="mx-2" />
-          </Link>
+          Von Garcia | New York, NY | <AiFillGithub className="mx-2" /> |
+          <AiFillLinkedin className="mx-2" />
         </Text>
       </Container>
     </main>

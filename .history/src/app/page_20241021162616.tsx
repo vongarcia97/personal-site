@@ -26,6 +26,7 @@ import {
   AiOutlineMail,
 } from "react-icons/ai";
 
+import { FaReact, FaNode } from "react-icons/fa6";
 import { Experience, Interests } from "@/lib/data";
 
 export default function Home() {
@@ -104,7 +105,7 @@ export default function Home() {
           >
             React.js
           </span>{" "}
-          &{" "}
+          <FaReact />&{" "}
           <span
             className={`text-transparent bg-gradient-to-tr bg-clip-text ${
               gradientColor === 2
@@ -140,7 +141,7 @@ export default function Home() {
             id="reveal-text"
           >
             I&apos;m Von Garcia! I&apos;ve got 3+ years of dev experience,
-            building fullstack applications with React.js. Currently, I am an
+            building fullstack applications with ReactJS. Currently, I am an
             employee of AMEX-GBT working for{" "}
             <a className="text-teal-400" href="https://theovationnetwork.com/">
               The OvationNetwork
@@ -308,19 +309,6 @@ export default function Home() {
             </div>
           </div>
         </Container>
-        <Text
-          variant={"section-name"}
-          className="mb-10 flex flex-row justify-center text-[8px] md:text-lg items-center"
-        >
-          Von Garcia | New York, NY |{" "}
-          <Link href="https://github.com/vongarcia97">
-            <AiFillGithub className="mx-2" />
-          </Link>{" "}
-          |
-          <Link href="https://linkedin.com/in/vongarcia97">
-            <AiFillLinkedin className="mx-2" />
-          </Link>
-        </Text>
       </Container>
     </main>
   );
