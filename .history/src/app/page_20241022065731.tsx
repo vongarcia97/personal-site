@@ -312,13 +312,13 @@ export default function Home() {
           variant={"section-name"}
           className="mb-10 flex flex-row justify-center text-[8px] md:text-lg items-center"
         >
-          Von Garcia | New York, NY |
+          Von Garcia | New York, NY |{" "}
           <Link href="https://github.com/vongarcia97">
-            <AiFillGithub className="mx-2 text-lg md:text-2xl" />
-          </Link>
+            <AiFillGithub className="mx-2" size="12px" />
+          </Link>{" "}
           |
           <Link href="https://linkedin.com/in/vongarcia97">
-            <AiFillLinkedin className="mx-2 text-lg md:text-2xl" />
+            <AiFillLinkedin className="mx-2" />
           </Link>
         </Text>
       </Container>

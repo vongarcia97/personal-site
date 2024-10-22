@@ -314,11 +314,11 @@ export default function Home() {
         >
           Von Garcia | New York, NY |
           <Link href="https://github.com/vongarcia97">
-            <AiFillGithub className="mx-2 text-lg md:text-2xl" />
+            <AiFillGithub className="mx-2 text-lg" />
           </Link>
           |
           <Link href="https://linkedin.com/in/vongarcia97">
-            <AiFillLinkedin className="mx-2 text-lg md:text-2xl" />
+            <AiFillLinkedin className="mx-2 text-lg" />
           </Link>
         </Text>
       </Container>

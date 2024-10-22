@@ -318,7 +318,7 @@ export default function Home() {
           </Link>
           |
           <Link href="https://linkedin.com/in/vongarcia97">
-            <AiFillLinkedin className="mx-2 text-lg md:text-2xl" />
+            <AiFillLinkedin className="mx-2 text-lg" />
           </Link>
         </Text>
       </Container>
