@@ -43,7 +43,7 @@ function ScrollNavbar({ currentSection }: { currentSection: string }) {
   const INITIAL_VALUE = [
     { id: 1, name: "about", link: "/#about" },
     { id: 2, name: "experience", link: "/#experience" },
-    { id: 3, name: "interest", link: "/#interest" },
+    { id: 3, name: "interests", link: "/#interests" },
   ];
 
   return (
@@ -112,7 +112,7 @@ function useIntersectionObserver(elementIds: string[]) {
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      // threshold: 0.5,
+      threshold: 0.5,
     };
 
     const observerCallback: IntersectionObserverCallback = (entries) => {

@@ -199,7 +199,7 @@ export default function Home() {
           </VerticalTimeline>
         </section>
 
-        <section id="interest" className="space-y-20">
+        <section id="interests" className="space-y-20">
           <NumberGradient
             gradient={3}
             number={3}

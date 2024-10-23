@@ -10,6 +10,7 @@ const space_grotesk = Space_Grotesk({
 });
 
 import { Toaster } from "@/components/ui/toaster";
+import { useEffect } from "react";
 
 export const metadata: Metadata = {
   title: "Von Garcia - NYC",

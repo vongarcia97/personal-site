@@ -1,8 +1,20 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { AnimatePresence, Variants, motion } from "framer-motion";
 // import { Link, animateScroll as scroll } from "react-scroll";
+
+import { Container } from "./ui/container";
+import { Button } from "./ui/button";
+import { Text, textVariants } from "./ui/text";
+import { Box } from "./ui/box";
+
+// Icons
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { IoIosArrowDown } from "react-icons/io";
+
+import { ServiceINITIAL_VALUE } from "@/lib/data";
+import { ServicePopupAnimation } from "@/lib/animation";
 
 type Props = {};
 
@@ -12,7 +24,7 @@ export default function Navbar({}: Props) {
   const currentSection = useIntersectionObserver([
     "about",
     "experience",
-    "interest",
+    "interests",
   ]);
 
   useEffect(() => {
@@ -39,18 +51,31 @@ export default function Navbar({}: Props) {
   );
 }
 
+const ScrollNavAnimation: Variants = {
+  hidden: {
+    scale: "var(--scale-from, 100%)",
+    x: "var(--y-from, -50%)",
+  },
+  visible: {
+    scale: "var(--scale-to, 100%)",
+  },
+  exit: {
+    scale: "var(--scale-from, 100%)",
+  },
+};
+
 function ScrollNavbar({ currentSection }: { currentSection: string }) {
   const INITIAL_VALUE = [
     { id: 1, name: "about", link: "/#about" },
     { id: 2, name: "experience", link: "/#experience" },
-    { id: 3, name: "interest", link: "/#interest" },
+    { id: 3, name: "interests", link: "/#interests" },
   ];
 
   return (
     <motion.nav className="fixed z-50 grid grid-cols-3 p-1 -translate-x-1/2 border rounded-full max-md:text-sm w-80 max-md:top-2 md:top-4 left-1/2 bg-black/80 backdrop-blur-sm [--scale-from:0%] [--scale-to:100%]">
       {INITIAL_VALUE.map((value) => (
         <a
-          key={value.name}
+          key={value.id}
           className={`relative inline-block py-2 text-center capitalize rounded-full isolate`}
           href={value.link}
         >
@@ -112,7 +137,7 @@ function useIntersectionObserver(elementIds: string[]) {
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      // threshold: 0.5,
+      threshold: 0.5,
     };
 
     const observerCallback: IntersectionObserverCallback = (entries) => {

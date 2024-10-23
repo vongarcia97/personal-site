@@ -152,12 +152,12 @@ export default function Home() {
           </Text>
         </section>
 
-        <div className="flex flex-col items-center space-y-6">
+        <section className="flex flex-col items-center space-y-6">
           <Text variant={"section-name"}>Current Stack of Choice</Text>
           <TechIcon />
-        </div>
+        </section>
 
-        <section id="experience" className="space-y-20">
+        <section className="space-y-20">
           <NumberGradient gradient={2} number={2} title="My Experience" />
           <VerticalTimeline lineColor="">
             {Experience.map((value) => (
@@ -199,7 +199,7 @@ export default function Home() {
           </VerticalTimeline>
         </section>
 
-        <section id="interest" className="space-y-20">
+        <section className="space-y-20">
           <NumberGradient
             gradient={3}
             number={3}
@@ -246,87 +246,85 @@ export default function Home() {
         </section>
       </div>
 
-      <section id="connect" className="space-y-20">
+      <Container
+        size={"2xl"}
+        className="relative mt-32 overflow-hidden isolate"
+      >
+        <div className="absolute top-0 left-0 z-20 w-full h-px bg-gradient-to-l from-transparent via-white to-transparent" />
+        <div
+          className="absolute inset-0 w-full h-full -z-10 opacity-10"
+          style={{
+            background:
+              "radial-gradient(50% 50% at 50% 0,rgba(255, 255, 255,.5) 0,rgba(255, 255, 255,0) 100%)",
+          }}
+        />
         <Container
-          size={"2xl"}
-          className="relative mt-32 overflow-hidden isolate"
+          size={"xl"}
+          className="grid items-center gap-8 py-32 text-center md:text-start md:grid-cols-3"
         >
-          <div className="absolute top-0 left-0 z-20 w-full h-px bg-gradient-to-l from-transparent via-white to-transparent" />
-          <div
-            className="absolute inset-0 w-full h-full -z-10 opacity-10"
-            style={{
-              background:
-                "radial-gradient(50% 50% at 50% 0,rgba(255, 255, 255,.5) 0,rgba(255, 255, 255,0) 100%)",
-            }}
-          />
-          <Container
-            size={"xl"}
-            className="grid items-center gap-8 py-32 text-center md:text-start md:grid-cols-3"
-          >
-            <div className="flex flex-col items-center gap-2 md:items-start md:col-span-2">
-              <Text
-                className={`max-w-4xl text-center text-5xl lg:text-6xl text-transparent bg-gradient-to-tr bg-clip-text ${
-                  gradientColor === 1
-                    ? "from-gradient-1-from to-gradient-1-to"
-                    : gradientColor === 2
-                    ? "from-gradient-2-from to-gradient-2-to"
-                    : "from-gradient-3-from to-gradient-3-to"
-                }`}
-              >
-                Want to connect?
-              </Text>
-              <Text size={20} variant={"muted-sm"} className="font-normal">
-                I&apos;m always open to hearing interesting ideas, new
-                opportunities, and meeting new people! Feel free to reach out to
-                me if you have any questions or just want to chat.
-              </Text>
-            </div>
-            {/* <div className="flex flex-col items-center gap-2 md:gap-4 md:items-end">
+          <div className="flex flex-col items-center gap-2 md:items-start md:col-span-2">
+            <Text
+              className={`max-w-4xl text-center text-5xl lg:text-6xl text-transparent bg-gradient-to-tr bg-clip-text ${
+                gradientColor === 1
+                  ? "from-gradient-1-from to-gradient-1-to"
+                  : gradientColor === 2
+                  ? "from-gradient-2-from to-gradient-2-to"
+                  : "from-gradient-3-from to-gradient-3-to"
+              }`}
+            >
+              Want to connect?
+            </Text>
+            <Text size={20} variant={"muted-sm"} className="font-normal">
+              I&apos;m always open to hearing interesting ideas, new
+              opportunities, and meeting new people! Feel free to reach out to
+              me if you have any questions or just want to chat.
+            </Text>
+          </div>
+          {/* <div className="flex flex-col items-center gap-2 md:gap-4 md:items-end">
             <Button size={"lg"} className="w-32 px-0">
               Check out
             </Button>
             <div className="p-0.5 rounded bg-gradient-to-r from-gradient-1-from to-gradient-1-to w-40 px-0"> */}
-            <div className="flex flex-col gap-2 md:gap-4 md:items-end justify-around">
-              <div className="w-full md:w-32 px-0 mx-auto">
-                <Link href={"https://www.calendly.com/vongarcia97/calendar"}>
-                  <Button
-                    variant={"primary"}
-                    size={"lg"}
-                    className="max-md:w-auto max-md:max-w-md mx-auto"
-                  >
-                    Schedule
-                    <AiTwotoneCalendar />
-                  </Button>
-                </Link>
-              </div>
-              <div className="w-full md:w-32 px-0 mx-auto">
-                <Link href={"mailto:vongarcia97@gmail.com"}>
-                  <Button
-                    size={"lg"}
-                    className="max-md:w-auto max-md:max-w-md mx-auto"
-                  >
-                    Email
-                    <AiOutlineMail />
-                  </Button>
-                </Link>
-              </div>
+          <div className="flex flex-col gap-2 md:gap-4 md:items-end justify-around">
+            <div className="w-full md:w-32 px-0 mx-auto">
+              <Link href={"https://www.calendly.com/vongarcia97/calendar"}>
+                <Button
+                  variant={"primary"}
+                  size={"lg"}
+                  className="max-md:w-auto max-md:max-w-md mx-auto"
+                >
+                  Schedule
+                  <AiTwotoneCalendar />
+                </Button>
+              </Link>
             </div>
-          </Container>
-          <Text
-            variant={"section-name"}
-            className="mb-10 flex flex-row justify-center text-[8px] md:text-lg items-center"
-          >
-            Von Garcia | New York, NY |
-            <Link href="https://github.com/vongarcia97">
-              <AiFillGithub className="mx-2 text-lg md:text-2xl" />
-            </Link>
-            |
-            <Link href="https://linkedin.com/in/vongarcia97">
-              <AiFillLinkedin className="mx-2 text-lg md:text-2xl" />
-            </Link>
-          </Text>
+            <div className="w-full md:w-32 px-0 mx-auto">
+              <Link href={"mailto:vongarcia97@gmail.com"}>
+                <Button
+                  size={"lg"}
+                  className="max-md:w-auto max-md:max-w-md mx-auto"
+                >
+                  Email
+                  <AiOutlineMail />
+                </Button>
+              </Link>
+            </div>
+          </div>
         </Container>
-      </section>
+        <Text
+          variant={"section-name"}
+          className="mb-10 flex flex-row justify-center text-[8px] md:text-lg items-center"
+        >
+          Von Garcia | New York, NY |
+          <Link href="https://github.com/vongarcia97">
+            <AiFillGithub className="mx-2 text-lg md:text-2xl" />
+          </Link>
+          |
+          <Link href="https://linkedin.com/in/vongarcia97">
+            <AiFillLinkedin className="mx-2 text-lg md:text-2xl" />
+          </Link>
+        </Text>
+      </Container>
     </main>
   );
 }

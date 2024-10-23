@@ -152,10 +152,10 @@ export default function Home() {
           </Text>
         </section>
 
-        <div className="flex flex-col items-center space-y-6">
+        <section className="flex flex-col items-center space-y-6">
           <Text variant={"section-name"}>Current Stack of Choice</Text>
           <TechIcon />
-        </div>
+        </section>
 
         <section id="experience" className="space-y-20">
           <NumberGradient gradient={2} number={2} title="My Experience" />
@@ -199,7 +199,7 @@ export default function Home() {
           </VerticalTimeline>
         </section>
 
-        <section id="interest" className="space-y-20">
+        <section id="interests" className="space-y-20">
           <NumberGradient
             gradient={3}
             number={3}
