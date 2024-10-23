@@ -179,7 +179,7 @@ export default function Home() {
                     fontSize: "15rem",
                     boxShadow: "none",
                   }}
-                  visible
+                  visible={true}
                   dateClassName="date"
                 >
                   <Text as="h3" size={24}>

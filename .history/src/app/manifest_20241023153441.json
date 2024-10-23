@@ -1,0 +1,23 @@
+{
+  "name": "Von Garcia - NYC",
+  "short_name": "Von Garcia - NYC",
+  "description": "Just another nerd's website.... but cooler",
+  "start_url": "/",
+  "shortcuts": [
+    {
+      "name": "About",
+      "url": "/#about",
+      "description": "Learn about how I'm not your cookie-cutter developer"
+    },
+    {
+      "name": "Experience",
+      "url": "/#experience",
+      "description": "I've been in healthcare and travel. What's next?"
+    },
+    {
+      "name": "Hobbies and Interests",
+      "url": "/#interest",
+      "description": "Cooking, traveling and other non-coding stuff..."
+    }
+  ]
+}
