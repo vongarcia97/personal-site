@@ -130,7 +130,7 @@ export default function Home() {
       </header>
 
       <div className="px-6 space-y-32">
-        <section id="about" className="flex flex-col items-center space-y-10">
+        <section id="about" className="flex flex-col items-center space-y-6">
           <Text as="h1" variant={"section-name"}>
             explore about me
           </Text>
@@ -150,11 +150,12 @@ export default function Home() {
             </a>{" "}
             - in the luxurious world of leisure travel!
           </Text>
+          <div className="flex flex-col items-center space-y-10">
+            <Text variant={"section-name"}>Current Stack of Choice</Text>
+            <TechIcon />
+          </div>
         </section>
-        <div className="flex flex-col items-center mt-20">
-          <Text variant={"section-name"}>Current Stack of Choice</Text>
-          <TechIcon />
-        </div>
+
         <section id="experience" className="space-y-20">
           <NumberGradient gradient={2} number={2} title="My Experience" />
           <VerticalTimeline lineColor="">
