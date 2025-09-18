@@ -1,11 +1,14 @@
 "use client";
+import React, { useEffect, useState } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+
+import SplitType from "split-type";
+
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import SplitType from "split-type";
+
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -25,6 +28,8 @@ import {
   AiTwotoneCalendar,
   AiOutlineMail,
 } from "react-icons/ai";
+
+import { FaPersonWalkingLuggage } from "react-icons/fa6";
 
 import { Experience, Interests } from "@/lib/data";
 
@@ -85,47 +90,25 @@ export default function Home() {
         data-scroll-speed=".5"
       >
         <Image
-          src="/profilePhoto.png"
-          width={50}
-          height={50}
+          src="/personal-site-headshot.jpeg"
+          width={`${150}`}
+          height={`${150}`}
           alt="logo"
-          className="rounded"
+          className="rounded w-1/4 h-1/4"
         />
-        <h1 className="max-w-4xl my-4 text-4xl text-center md:text-5xl lg:text-6xl">
-          Full-stack developer in NYC experienced in{" "}
-          <span
-            className={`text-transparent bg-gradient-to-tr bg-clip-text ${
-              gradientColor === 1
-                ? "from-gradient-1-from to-gradient-1-to"
-                : gradientColor === 2
-                ? "from-gradient-2-from to-gradient-2-to"
-                : "from-gradient-3-from to-gradient-3-to"
-            }`}
-          >
-            React.js
-          </span>{" "}
-          &{" "}
-          <span
-            className={`text-transparent bg-gradient-to-tr bg-clip-text ${
-              gradientColor === 2
-                ? "from-gradient-1-from to-gradient-1-to"
-                : gradientColor === 1
-                ? "from-gradient-2-from to-gradient-2-to"
-                : "from-gradient-3-from to-gradient-3-to"
-            }`}
-          >
-            Node.js
-          </span>{" "}
-          frameworks.
+        <h1 className="max-w-4xl my-4 text-4xl text-center">
+          Software Engineer based in NYC <br />
+          currently working in the travel industry{" "}
+          <FaPersonWalkingLuggage className="inline-block" />
         </h1>
         <Text
           variant={"muted-lg"}
           size={20}
-          className="mb-8 text-center max-md:text-base"
+          className="my-8 text-center max-md:text-base"
         >
-          I have a strong foundation in JavaScript, HTML, and CSS paired with
-          extensive knowledge developing complex back-end services using Node.js
-          + Express.js.
+          I have a strong foundation in web development and have extensive
+          knowledge <br />
+          developing complex fullstack applications
         </Text>
       </header>
 
@@ -142,13 +125,13 @@ export default function Home() {
             id="reveal-text"
             as="p"
           >
-            I&apos;m Von Garcia! I&apos;ve got 3+ years of dev experience,
-            building fullstack applications with React.js. Currently, I am an
-            employee of AMEX-GBT working for{" "}
+            I&apos;m Von Garcia! I&apos;ve got 4+ years of software development
+            experience, building fullstack applications. I am part of{" "}
             <a className="text-teal-400" href="https://theovationnetwork.com/">
               The OvationNetwork
             </a>{" "}
-            - in the luxurious world of leisure travel!
+            - a host travel management company, specializing in luxury, leisure
+            travel.
           </Text>
         </section>
         <div className="flex flex-col items-center mt-20">
