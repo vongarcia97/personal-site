@@ -29,7 +29,7 @@ import {
   AiOutlineMail,
 } from "react-icons/ai";
 
-import { FaPersonWalkingLuggage } from "react-icons/fa6";
+import { FaPersonWalkingLuggage, FaPlaneDeparture } from "react-icons/fa6";
 
 import { Experience, Interests } from "@/lib/data";
 
@@ -91,30 +91,30 @@ export default function Home() {
       >
         <Image
           src="/personal-site-headshot.jpeg"
-          width={`${150}`}
-          height={`${150}`}
+          width={150}
+          height={150}
           alt="logo"
-          className="rounded w-1/4 h-1/4"
+          className="rounded h-auto w-auto"
         />
         <h1 className="max-w-4xl my-4 text-4xl text-center">
           Software Engineer based in NYC <br />
-          currently working in the travel industry{" "}
+          currently working in the leisure travel industry{" "}
           <FaPersonWalkingLuggage className="inline-block" />
+          <FaPlaneDeparture className="pl-2 inline-block" />
         </h1>
         <Text
           variant={"muted-lg"}
           size={20}
-          className="my-8 text-center max-md:text-base"
+          className="my-8 text-center max-md:text-base md:mx-12"
         >
           I have a strong foundation in web development and have extensive
-          knowledge <br />
-          developing complex fullstack applications
+          knowledge of developing complex full-stack applications
         </Text>
       </header>
 
       <div className="px-6 space-y-32">
         <section id="about" className="flex flex-col items-center space-y-10">
-          <Text as="h1" variant={"section-name"}>
+          <Text as="h1" variant={"section-name"} className="text-md md:text-lg">
             explore about me
           </Text>
           <NumberGradient gradient={1} number={1} title="About" />

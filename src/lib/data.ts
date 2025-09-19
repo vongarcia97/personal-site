@@ -1,5 +1,14 @@
 import React from "react";
-import { FaEarthAmericas, FaCode, FaBriefcase, FaRightLeft, FaFutbol, FaPlane, FaBowlRice, FaCarRear } from "react-icons/fa6";
+import {
+  FaEarthAmericas,
+  FaCode,
+  FaBriefcase,
+  FaRightLeft,
+  FaFutbol,
+  FaPlane,
+  FaBowlRice,
+  FaCarRear,
+} from "react-icons/fa6";
 
 const ServiceINITIAL_VALUE = [
   {
@@ -17,24 +26,26 @@ const Experience = [
     subtitle: "From healthcare to tech",
     description:
       "It all started with a 'Hello, world' in Python..... Then started using libraries like pandas and matplotlib..... I was hooked.",
-    date: "2020",
+    date: "2019",
     icon: React.createElement(FaRightLeft),
   },
   {
     id: 2,
     title: "Codesmith Software Engineering Immersive Program",
-    subtitle: "Learned how to securely piece a back-end to the front-end to make a full stack application.",
+    subtitle:
+      "Learned how to securely piece a back-end to the front-end to make a full stack application.",
     description:
-      "Learned how to securely piece a back-end to the front-end to make a full stack application. It was my first time using libraries like Redux, Node.js, Express, and PostgreSQL. This was pre-AI so I deserve some street creds....",
+      "Codesmith was a game-changer for me. I had to self-teach myself JavaScript, and already have a strong grasp of concepts like OOP, closures and recursion. It was my first time using libraries like Redux, Node.js, Express, and PostgreSQL. The most valuable skill I learned was learning how to approach problems systematically. This was pre-AI so I deserve some street creds....",
     date: "2022",
     icon: React.createElement(FaCode),
   },
   {
     id: 3,
     title: "AMEX Global Business Travel",
-    subtitle: "The OvationNetwork - luxury, leisure department of Ovation Travel Group",
+    subtitle:
+      "The OvationNetwork - luxury, leisure department of Ovation Travel Group",
     description:
-      "Before starting, I had no idea what goes on after I click 'Book Now' when I purchase travel online. Now I know the ins and outs of the travel industry. I am currently working on a full stack app that my team (operations) can use as a CRM to keep us organized as we continue to scale. My most notable contrinution is solving an organization-wide accounting issue that occured when we were integrating Agresso software into a new commission processing firm.",
+      "Before starting, I had no idea what goes on after I click 'Book Now' when I purchase travel online. Now I know the ins and outs of the travel industry. I am currently working on a full stack app that my team (operations) can use as a CRM to keep us organized as we continue to scale. My most notable contrinution is solving an organization-wide accounting issue that occured when we were integrating Unit4 (Agresso) CentralCommand module into a new commission processing company.",
     date: "March 2023 - Present",
     icon: React.createElement(FaBriefcase),
   },
@@ -71,7 +82,8 @@ const Interests = [
   {
     id: 4,
     title: "Traveling",
-    subtitle: "This has been a passion of mine even before I started working in the travel industry.",
+    subtitle:
+      "This has been a passion of mine even before I started working in the travel industry.",
     description:
       "I was born and raised in the Philippines, and I have always been fascinated by different cultures. I am also a self-proclaimed 'points hack' specialist, my latest steal was two Premium Comfort seats to Rome for ~60k points for me and my wife! I'm blessed to have visited beautiful places such as Paris, Nice, Barcelona and Priorat - but Gozo, Malta is what I consider to be paradise!",
     date: "",
