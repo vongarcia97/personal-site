@@ -107,8 +107,9 @@ export default function Home() {
           size={20}
           className="my-8 text-center max-md:text-base md:mx-12"
         >
-          I have a strong foundation in web development and have extensive
-          knowledge of developing complex full-stack applications
+          Grounded by my strong foundation in web development but driven by
+          curiosity, I really enjoy building full-stack applications that
+          showcase my creativity and problem-solving skills
         </Text>
       </header>
 
@@ -125,13 +126,14 @@ export default function Home() {
             id="reveal-text"
             as="p"
           >
-            I&apos;m Von Garcia! I&apos;ve got 4+ years of software development
-            experience, building fullstack applications. I am part of{" "}
+            I&apos;m Von Garcia! I have 4+ years of software development
+            experience, building fullstack applications. I am currently working
+            at{" "}
             <a className="text-teal-400" href="https://theovationnetwork.com/">
               The OvationNetwork
             </a>{" "}
-            - a host travel management company, specializing in luxury, leisure
-            travel.
+            - a host travel management company that specializes in luxury,
+            leisure travel.
           </Text>
         </section>
         <div className="flex flex-col items-center mt-20">
