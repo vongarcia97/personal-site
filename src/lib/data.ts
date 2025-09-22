@@ -41,11 +41,11 @@ const Experience = [
   },
   {
     id: 3,
-    title: "AMEX Global Business Travel",
+    title: "AMEX GBT | The OvationNetwork",
     subtitle:
-      "The OvationNetwork - luxury, leisure department of Ovation Travel Group",
+      "The OvationNetwork is a host travel management company that specializes in luxury travel and providing white glove service to clients",
     description:
-      "Before starting, I had no idea what goes on after I click 'Book Now' when I purchase travel online. Now I know the ins and outs of the travel industry. I am currently working on a full stack app that my team (operations) can use as a CRM to keep us organized as we continue to scale. My most notable contrinution is solving an organization-wide accounting issue that occured when we were integrating Unit4 (Agresso) CentralCommand module into a new commission processing company.",
+      "Before starting, I had no idea what goes on after I click 'Book Now' when I purchase a trip from Expedia. Now that I know the 'ins and outs', I can say for certain that there needs to be more concentration on applying modern tech solutions to improve efficiency in the travel industry. I am currently working on a CRM that my team (operations) can use to keep us moving faster and more organized as we continue to scale. My most notable contrinution is solving a mission-critical, organization-wide accounting issue that occured when we were integrating into a new commission collection and payment process in our existing Unit4 (Agresso) CentralCommand setup.",
     date: "March 2023 - Present",
     icon: React.createElement(FaBriefcase),
   },
@@ -57,16 +57,16 @@ const Interests = [
     title: "Weekend Chef",
     subtitle: "Trying out my take on different cuisines on the weekends",
     description:
-      "Whatever I see that makes my mouth water on my Instagram Discover Page or TikTok algo, I try to make it. To give an idea of how daring I am - I've made bao buns from scratch and prepare my own Salmon sashimi at home.",
+      "Whatever I see that makes my mouth water on my Instagram Discover Page or TikTok algo, I try to make it. To give an idea of how daring I am - I've made bao buns from scratch and prepare my own sashimi at home.",
     date: "Since 2019",
     icon: React.createElement(FaBowlRice),
   },
   {
     id: 2,
-    title: "Formula One - McLaren Racing Team",
-    subtitle: "What can I say? Drive To Survive is just THAT good....",
+    title: "Formula One - McLaren Racing",
+    subtitle: "What can I say? Netflix'sDrive To Survive is just THAT good....",
     description:
-      "I've always admired the engineering that goes into making a Formula One car. I chose to support McLaren because that team has pedigree and I want to see them back on top! I'm excited to see Lando Norris put up a challenge for Max in the World Championship.",
+      "I've always admired the engineering that goes into making a Formula One car. I chose to support McLaren because that team has pedigree and I want to see them back on top! I'm excited to see Lando Norris and McLaren challenge Red Bull for the Drivers' and Constructors' Championships.",
     date: "Since 2020",
     icon: React.createElement(FaCarRear),
   },
@@ -83,10 +83,10 @@ const Interests = [
     id: 4,
     title: "Traveling",
     subtitle:
-      "This has been a passion of mine even before I started working in the travel industry.",
+      "Working in the travel industry doesn't help with my travel bug....",
     description:
-      "I was born and raised in the Philippines, and I have always been fascinated by different cultures. I am also a self-proclaimed 'points hack' specialist, my latest steal was two Premium Comfort seats to Rome for ~60k points for me and my wife! I'm blessed to have visited beautiful places such as Paris, Nice, Barcelona and Priorat - but Gozo, Malta is what I consider to be paradise!",
-    date: "",
+      "I was born and raised in the Philippines, and I have always been fascinated by different cultures ever since I migrated to the United States and moved to NYC. I am also a self-proclaimed 'points hack' specialist, my latest steal was two Premium Comfort seats to Rome for around60k points! I'm blessed to have visited beautiful places such as Paris, Nice, Bordeaux, Barcelona, Priorat, Rome, Milan, etc. - but Gozo, Malta is what I consider to be paradise.",
+    date: "Always been and always will be a nomad!",
     icon: React.createElement(FaPlane),
   },
 ];
