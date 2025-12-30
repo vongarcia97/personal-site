@@ -83,7 +83,7 @@ const Interests = [
     id: 4,
     title: "Traveling 🌍 🛫",
     subtitle:
-      "I had no choice, but working in the leisure travel definitely doesn't help with my travel bug....",
+      "Working in the leisure travel definitely doesn't help with my travel bug....",
     description:
       "I grew up in the Philippines, moved to the US during my teen years and now live in NYC🗽. I am a self-proclaimed 'AMEX points redemption specialist' since I've been redeeming points for travel for the last five years. My latest steal were 2 Air France Premium Comfort seats to Rome for ~60k points! I'm blessed to have visited beautiful cities like Paris, Nice, Bordeaux, Barcelona, Priorat, Rome, Milan, etc. - but the tiny island of Gozo in Malta is what I consider to be paradise! 🌴🌤️",
     date: "Always been and always will be a nomad!",
