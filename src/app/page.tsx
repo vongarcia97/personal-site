@@ -97,28 +97,31 @@ export default function Home() {
           className="rounded h-auto w-auto"
         />
         <h1 className="max-w-4xl my-4 text-4xl text-center">
-          Software Engineer based in NYC <br />
-          currently working in the leisure travel industry{" "}
+          Hello, I&apos;m Von Garcia! 👋
+        </h1>
+        <h2 className="max-w-4xl my-4 text-4xl text-center">
+          Software Engineer based in New York City <br />
+          Working in the leisure travel industry{" "}
           <FaPersonWalkingLuggage className="inline-block" />
           <FaPlaneDeparture className="pl-2 inline-block" />
-        </h1>
+        </h2>
         <Text
           variant={"muted-lg"}
           size={20}
           className="my-8 text-center max-md:text-base md:mx-12"
         >
-          Grounded by a strong foundation in software development fundamentals
-          and driven by endless curiosity, I really enjoy building full-stack
-          applications that showcase my creativity and problem-solving skills
+          I have a strong foundation in software development fundamentals and am
+          driven by endless curiosity, I really enjoy being thrown into new
+          challenges that test my creativity and problem-solving skills.
         </Text>
       </header>
 
       <div className="px-6 space-y-32">
-        <section id="about" className="flex flex-col items-center space-y-10">
+        <section id="intro" className="flex flex-col items-center space-y-10">
           <Text as="h1" variant={"section-name"} className="text-md md:text-lg">
-            explore about me
+            A little bit about me...
           </Text>
-          <NumberGradient gradient={1} number={1} title="About" />
+          <NumberGradient gradient={1} number={1} title="Intro" />
           <Text
             variant={"muted-lg"}
             size={20}
@@ -126,22 +129,30 @@ export default function Home() {
             id="reveal-text"
             as="p"
           >
-            I&apos;m Von Garcia! As my Instagram bio says, I&apos;m either
-            &quot;locked in my room coding, or busy in the kitchen
-            cooking!&quot; Currently, I am a software engineer at{" "}
+            As my Instagram bio says, I&apos;m either &quot;locked in my room
+            coding, or busy in the kitchen cooking!&quot; Currently, I am a
+            software engineer at{" "}
             <a className="text-teal-400" href="https://theovationnetwork.com/">
               The OvationNetwork
             </a>{" "}
-            - a host travel management company that specializes in leisure
-            luxury travel.
+            - a host travel management company (TMC) that specializes in luxury
+            leisure travel.
           </Text>
         </section>
-        <div className="flex flex-col items-center mt-20">
-          <Text variant={"section-name"}>Current Stack of Choice</Text>
+        <div className="flex flex-col items-center mt-10">
+          <Text variant={"section-name"}>MY CURRENT TECH STACK</Text>
+          <Text className="mt-4" variant={"section-description"}>
+            I have the fundamentals of web development down, but I&apos;m always
+            looking for new ways to be lazier (I mean, efficient 😉)...
+          </Text>
           <TechIcon />
         </div>
         <section id="experience" className="space-y-20">
-          <NumberGradient gradient={2} number={2} title="My Experience" />
+          <NumberGradient
+            gradient={2}
+            number={2}
+            title="What I've been up to..."
+          />
           <VerticalTimeline lineColor="">
             {Experience.map((value) => (
               <React.Fragment key={value.id}>

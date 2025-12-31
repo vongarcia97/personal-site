@@ -10,7 +10,7 @@ export default function Navbar({}: Props) {
   const [isScrollNavbar, setIsScrollNavbar] = useState(false);
 
   const currentSection = useIntersectionObserver([
-    "about",
+    "intro",
     "experience",
     "interest",
   ]);
@@ -41,7 +41,7 @@ export default function Navbar({}: Props) {
 
 function ScrollNavbar({ currentSection }: { currentSection: string }) {
   const INITIAL_VALUE = [
-    { id: 1, name: "about", link: "/#about" },
+    { id: 1, name: "intro", link: "/#intro" },
     { id: 2, name: "experience", link: "/#experience" },
     { id: 3, name: "interest", link: "/#interest" },
   ];
@@ -125,7 +125,7 @@ function useIntersectionObserver(elementIds: string[]) {
 
     const observer = new IntersectionObserver(
       observerCallback,
-      observerOptions,
+      observerOptions
     );
 
     elementIds.forEach((id) => {

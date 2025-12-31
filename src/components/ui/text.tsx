@@ -22,6 +22,8 @@ const textVariants = cva("", {
       "space-grotesk": "font-space_grotesk text-accents-6",
       "section-name":
         "text-xs tracking-[0.255rem] uppercase text-center text-accents-6",
+      "section-description":
+        "text-xs tracking-[0.15rem] text-center text-accents-6",
     },
   },
   defaultVariants: {},

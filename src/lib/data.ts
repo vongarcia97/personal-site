@@ -22,32 +22,32 @@ const ServiceINITIAL_VALUE = [
 const Experience = [
   {
     id: 1,
+    title: "AMEX Global Business Travel (GBT)",
+    subtitle:
+      "I work under the Global Partner Solutions (GPS) division, as a SWE for The OvationNetwork",
+    description:
+      "My most notable contribution is solving an organization-wide accounting issue that occurred when we were integrating into a new commission reconciliation program in our Unit4 (Agresso) CentralCommand setup. I am currently working on a dedicated CRM for host travel management companies (TMCs) that will enable their operations to scale in an organized and efficient manner.",
+    date: "March 2023 - Present",
+    icon: React.createElement(FaBriefcase),
+  },
+  {
+    id: 2,
+    title: "Codesmith Software Engineering Immersive Program",
+    subtitle:
+      "Learned how to securely piece a back-end to the front-end to make a full stack application",
+    description:
+      "Despite already having a deep understanding of concepts like OOP, closures and recursion, it was at Codesmith where I was able to learn how to apply these concepts in software engineering. The most valuable skill I learned was learning how to approach problems systematically. This was pre-LLMs so I deserve the street creds....",
+    date: "2022-23",
+    icon: React.createElement(FaCode),
+  },
+  {
+    id: 3,
     title: "Career Change",
     subtitle: "From healthcare to tech",
     description:
       "It all started with a 'Hello, world' in Python..... Then started using libraries like pandas and matplotlib..... I was hooked.",
     date: "2019",
     icon: React.createElement(FaRightLeft),
-  },
-  {
-    id: 2,
-    title: "Codesmith Software Engineering Immersive Program",
-    subtitle:
-      "Learned how to securely piece a back-end to the front-end to make a full stack application.",
-    description:
-      "Codesmith was a game-changer for me. I had to self-teach myself JavaScript, and already have a strong grasp of concepts like OOP, closures and recursion. It was my first time using libraries like Redux, Node.js, Express, and PostgreSQL. The most valuable skill I learned was learning how to approach problems systematically. This was pre-AI so I deserve some street creds....",
-    date: "2022",
-    icon: React.createElement(FaCode),
-  },
-  {
-    id: 3,
-    title: "AMEX GBT | The OvationNetwork",
-    subtitle:
-      "The OvationNetwork is a host travel management company that specializes in luxury travel and providing white glove service to clients",
-    description:
-      "Before starting, I had no idea what goes on after I click 'Book Now' when I purchase a trip from Expedia. Now that I know the 'ins and outs', I can say for certain that there needs to be more concentration on applying modern tech solutions to improve efficiency in the travel industry. I am currently working on a CRM that my team (operations) can use to keep us moving faster and more organized as we continue to scale. My most notable contrinution is solving a mission-critical, organization-wide accounting issue that occured when we were integrating into a new commission collection and payment process in our existing Unit4 (Agresso) CentralCommand setup.",
-    date: "March 2023 - Present",
-    icon: React.createElement(FaBriefcase),
   },
 ];
 
