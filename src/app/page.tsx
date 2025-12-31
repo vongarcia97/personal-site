@@ -96,9 +96,7 @@ export default function Home() {
           alt="logo"
           className="rounded h-auto w-auto"
         />
-        <h1 className="max-w-4xl my-4 text-4xl text-center">
-          Hello, I&apos;m Von Garcia! 👋
-        </h1>
+        <h1 className="max-w-4xl my-4 text-4xl text-center">Von Garcia</h1>
         <h2 className="max-w-4xl my-4 text-4xl text-center">
           Software Engineer based in New York City <br />
           Working in the leisure travel industry{" "}
@@ -110,9 +108,10 @@ export default function Home() {
           size={20}
           className="my-8 text-center max-md:text-base md:mx-12"
         >
-          I have a strong foundation in software development fundamentals and am
-          driven by endless curiosity, I really enjoy being thrown into new
-          challenges that test my creativity and problem-solving skills.
+          I have a strong foundation in software development fundamentals and
+          driven by constant curiosity. I enjoy being in the &quot;unknown&quot;
+          where I can find new challenges that test my creativity and
+          problem-solving skills.
         </Text>
       </header>
 
