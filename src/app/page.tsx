@@ -94,12 +94,13 @@ export default function Home() {
           width={150}
           height={150}
           alt="logo"
-          className="rounded h-auto w-auto"
+          className="rounded-full w-32 h-auto"
         />
         <h1 className="max-w-4xl my-4 text-4xl text-center">Von Garcia</h1>
-        <h2 className="max-w-4xl my-4 text-4xl text-center">
-          Software Engineer based in New York City <br />
-          Working in the leisure travel industry{" "}
+        <h2 className="max-w-4xl my-4 text-lg text-center">
+          Software Engineer based in NYC
+          <br />
+          Currently coding for the leisure travel industry{" "}
           <FaPersonWalkingLuggage className="inline-block" />
           <FaPlaneDeparture className="pl-2 inline-block" />
         </h2>
@@ -109,36 +110,34 @@ export default function Home() {
           className="my-8 text-center max-md:text-base md:mx-12"
         >
           I have a strong foundation in software development fundamentals and
-          driven by constant curiosity. I enjoy being in the &quot;unknown&quot;
-          where I can find new challenges that test my creativity and
-          problem-solving skills.
+          driven by constant curiosity. My happy place is in the
+          &quot;unknown&quot; where I can find new challenges that test my
+          creativity and problem-solving skills.
         </Text>
       </header>
 
-      <div className="px-6 space-y-32">
-        <section id="intro" className="flex flex-col items-center space-y-10">
-          <Text as="h1" variant={"section-name"} className="text-md md:text-lg">
-            A little bit about me...
-          </Text>
-          <NumberGradient gradient={1} number={1} title="Intro" />
-          <Text
-            variant={"muted-lg"}
-            size={20}
-            className="max-w-3xl mb-8 text-center max-md:text-base"
-            id="reveal-text"
-            as="p"
-          >
-            As my Instagram bio says, I&apos;m either &quot;locked in my room
-            coding, or busy in the kitchen cooking!&quot; Currently, I am a
-            software engineer at{" "}
-            <a className="text-teal-400" href="https://theovationnetwork.com/">
-              The OvationNetwork
-            </a>{" "}
-            - a host travel management company (TMC) that specializes in luxury
-            leisure travel.
-          </Text>
-        </section>
-        <div className="flex flex-col items-center mt-10">
+      <section id="intro" className="flex flex-col items-center space-y-10">
+        <Text as="h1" variant={"section-name"} className="text-md md:text-lg">
+          A little bit about me...
+        </Text>
+        <NumberGradient gradient={1} number={1} title="Intro" />
+        <Text
+          variant={"muted-lg"}
+          size={20}
+          className="max-w-3xl mb-8 text-center max-md:text-base mx-4"
+          id="reveal-text"
+          as="p"
+        >
+          As my Instagram bio says, I&apos;m either &quot;locked in my room
+          coding, or busy in the kitchen cooking!&quot; Currently, I am a
+          software engineer at{" "}
+          <a className="text-teal-400" href="https://theovationnetwork.com/">
+            The OvationNetwork
+          </a>{" "}
+          - a host travel management company (TMC) that specializes in luxury
+          leisure travel.
+        </Text>
+        <div className="flex flex-col items-center pt-20 mx-4">
           <Text variant={"section-name"}>MY CURRENT TECH STACK</Text>
           <Text className="mt-4" variant={"section-description"}>
             I have the fundamentals of web development down, but I&apos;m always
@@ -146,98 +145,95 @@ export default function Home() {
           </Text>
           <TechIcon />
         </div>
-        <section id="experience" className="space-y-20">
-          <NumberGradient
-            gradient={2}
-            number={2}
-            title="What I've been up to..."
-          />
-          <VerticalTimeline lineColor="">
-            {Experience.map((value) => (
-              <React.Fragment key={value.id}>
-                <VerticalTimelineElement
-                  contentStyle={{
-                    background: "#0A0A0A",
-                    border: "0.5px solid rgba(255, 255, 255, .20)",
-                    boxShadow: "none",
-                    borderRadius: "12px",
-                  }}
-                  contentArrowStyle={{
-                    display: "none",
-                  }}
-                  date={value.date}
-                  icon={value.icon}
-                  iconStyle={{
-                    background: "black",
-                    fontSize: "15rem",
-                    boxShadow: "none",
-                  }}
-                  dateClassName="date"
-                >
-                  <Text as="h3" size={24}>
-                    {value.title}
-                  </Text>
-                  <Text variant={"muted-sm"} className="!mt-1 !text-xs">
-                    {value.subtitle}
-                  </Text>
-                  <Text
-                    className="!mt-2 !text-sm !leading-6"
-                    variant={"muted-sm"}
-                  >
-                    {value.description}
-                  </Text>
-                </VerticalTimelineElement>
-              </React.Fragment>
-            ))}
-          </VerticalTimeline>
-        </section>
+      </section>
 
-        <section id="interest" className="space-y-20">
-          <NumberGradient
-            gradient={3}
-            number={3}
-            title="Hobbies and Interests"
-          />
-          <VerticalTimeline lineColor="">
-            {Interests.map((value) => (
-              <React.Fragment key={value.id}>
-                <VerticalTimelineElement
-                  contentStyle={{
-                    background: "#0A0A0A",
-                    border: "0.5px solid rgba(255, 255, 255, .20)",
-                    boxShadow: "none",
-                    borderRadius: "12px",
-                  }}
-                  contentArrowStyle={{
-                    display: "none",
-                  }}
-                  date={value.date}
-                  icon={value.icon}
-                  iconStyle={{
-                    background: "black",
-                    fontSize: "15rem",
-                    boxShadow: "none",
-                  }}
-                  dateClassName="date"
+      <section id="experience" className="space-y-20 pt-20">
+        <NumberGradient
+          gradient={2}
+          number={2}
+          title="What I've been up to..."
+        />
+        <VerticalTimeline lineColor="">
+          {Experience.map((value) => (
+            <React.Fragment key={value.id}>
+              <VerticalTimelineElement
+                contentStyle={{
+                  background: "#0A0A0A",
+                  border: "0.5px solid rgba(255, 255, 255, .20)",
+                  boxShadow: "none",
+                  borderRadius: "12px",
+                }}
+                contentArrowStyle={{
+                  display: "none",
+                }}
+                date={value.date}
+                icon={value.icon}
+                iconStyle={{
+                  background: "black",
+                  fontSize: "15rem",
+                  boxShadow: "none",
+                }}
+                dateClassName="date"
+              >
+                <Text as="h3" size={24}>
+                  {value.title}
+                </Text>
+                <Text variant={"muted-sm"} className="!mt-1 !text-xs">
+                  {value.subtitle}
+                </Text>
+                <Text
+                  className="!mt-2 !text-sm !leading-6"
+                  variant={"muted-sm"}
                 >
-                  <Text as="h3" size={24}>
-                    {value.title}
-                  </Text>
-                  <Text variant={"muted-sm"} className="!mt-1 !text-xs">
-                    {value.subtitle}
-                  </Text>
-                  <Text
-                    className="!mt-2 !text-sm !leading-6"
-                    variant={"muted-sm"}
-                  >
-                    {value.description}
-                  </Text>
-                </VerticalTimelineElement>
-              </React.Fragment>
-            ))}
-          </VerticalTimeline>
-        </section>
-      </div>
+                  {value.description}
+                </Text>
+              </VerticalTimelineElement>
+            </React.Fragment>
+          ))}
+        </VerticalTimeline>
+      </section>
+
+      <section id="interest" className="space-y-20">
+        <NumberGradient gradient={3} number={3} title="Hobbies and Interests" />
+        <VerticalTimeline lineColor="">
+          {Interests.map((value) => (
+            <React.Fragment key={value.id}>
+              <VerticalTimelineElement
+                contentStyle={{
+                  background: "#0A0A0A",
+                  border: "0.5px solid rgba(255, 255, 255, .20)",
+                  boxShadow: "none",
+                  borderRadius: "12px",
+                }}
+                contentArrowStyle={{
+                  display: "none",
+                }}
+                date={value.date}
+                icon={value.icon}
+                iconStyle={{
+                  background: "black",
+                  fontSize: "15rem",
+                  boxShadow: "none",
+                }}
+                dateClassName="date"
+              >
+                <Text as="h3" size={24}>
+                  {value.title}
+                </Text>
+                <Text variant={"muted-sm"} className="!mt-1 !text-xs">
+                  {value.subtitle}
+                </Text>
+                <Text
+                  className="!mt-2 !text-sm !leading-6"
+                  variant={"muted-sm"}
+                >
+                  {value.description}
+                </Text>
+              </VerticalTimelineElement>
+            </React.Fragment>
+          ))}
+        </VerticalTimeline>
+      </section>
 
       <section id="connect" className="space-y-20">
         <Container
@@ -262,8 +258,8 @@ export default function Home() {
                   gradientColor === 1
                     ? "from-gradient-1-from to-gradient-1-to"
                     : gradientColor === 2
-                    ? "from-gradient-2-from to-gradient-2-to"
-                    : "from-gradient-3-from to-gradient-3-to"
+                      ? "from-gradient-2-from to-gradient-2-to"
+                      : "from-gradient-3-from to-gradient-3-to"
                 }`}
               >
                 Want to connect?

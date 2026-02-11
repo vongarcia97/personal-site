@@ -18,7 +18,7 @@ export default function Navbar({}: Props) {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      setIsScrollNavbar(scrollPosition >= 300);
+      setIsScrollNavbar(scrollPosition >= 100);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -41,9 +41,9 @@ export default function Navbar({}: Props) {
 
 function ScrollNavbar({ currentSection }: { currentSection: string }) {
   const INITIAL_VALUE = [
-    { id: 1, name: "intro", link: "/#intro" },
-    { id: 2, name: "experience", link: "/#experience" },
-    { id: 3, name: "interest", link: "/#interest" },
+    { id: 1, name: "intro", link: "#intro" },
+    { id: 2, name: "experience", link: "#experience" },
+    { id: 3, name: "interest", link: "#interest" },
   ];
 
   return (
@@ -125,7 +125,7 @@ function useIntersectionObserver(elementIds: string[]) {
 
     const observer = new IntersectionObserver(
       observerCallback,
-      observerOptions
+      observerOptions,
     );
 
     elementIds.forEach((id) => {
