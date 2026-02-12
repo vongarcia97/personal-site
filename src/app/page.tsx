@@ -74,7 +74,7 @@ export default function Home() {
           opacity: 1,
           stagger: 0.2,
         })
-        .duration(1.5);
+        .duration(4);
     });
   }, []);
 
@@ -90,11 +90,11 @@ export default function Home() {
         data-scroll-speed=".5"
       >
         <Image
-          src="/personal-site-headshot.jpeg"
+          src="/headshot.jpg"
           width={150}
           height={150}
           alt="logo"
-          className="rounded-full w-32 h-auto"
+          className="rounded-full"
         />
         <h1 className="max-w-4xl my-4 text-4xl text-center">Von Garcia</h1>
         <h2 className="max-w-4xl my-4 text-lg text-center">
@@ -107,7 +107,8 @@ export default function Home() {
         <Text
           variant={"muted-lg"}
           size={20}
-          className="my-8 text-center max-md:text-base md:mx-12"
+          className="my-8 text-center max-md:text-base md:mx-12 md:text-xl md:font-normal"
+          id="reveal-text"
         >
           I have a strong foundation in software development fundamentals and
           driven by constant curiosity. My happy place is in the
@@ -137,11 +138,12 @@ export default function Home() {
           - a host travel management company (TMC) that specializes in luxury
           leisure travel.
         </Text>
-        <div className="flex flex-col items-center pt-20 mx-4">
-          <Text variant={"section-name"}>MY CURRENT TECH STACK</Text>
+        <div className="flex flex-col items-center pt-20 mx-4 w-full">
+          <Text variant={"section-name"} className="text-md md:text-lg mx-4">
+            MY BREAD & BUTTER STACK 🥯 🧈
+          </Text>
           <Text className="mt-4" variant={"section-description"}>
-            I have the fundamentals of web development down, but I&apos;m always
-            looking for new ways to be lazier (I mean, efficient 😉)...
+            These tools run my life....
           </Text>
           <TechIcon />
         </div>
@@ -250,11 +252,11 @@ export default function Home() {
           />
           <Container
             size={"xl"}
-            className="grid items-center gap-8 py-32 text-center md:text-start md:grid-cols-3"
+            className="grid items-center gap-8 py-32 text-center md:text-start md:grid-cols-3 md:items-start"
           >
             <div className="flex flex-col items-center gap-2 md:items-start md:col-span-2">
               <Text
-                className={`max-w-4xl text-center text-5xl lg:text-6xl text-transparent bg-gradient-to-tr bg-clip-text ${
+                className={`max-w-4xl text-center text-2xl lg:text-2xl text-transparent bg-gradient-to-tr bg-clip-text ${
                   gradientColor === 1
                     ? "from-gradient-1-from to-gradient-1-to"
                     : gradientColor === 2
@@ -264,18 +266,17 @@ export default function Home() {
               >
                 Want to connect?
               </Text>
-              <Text size={20} variant={"muted-sm"} className="font-normal">
-                I&apos;m always open to hearing interesting ideas, new
-                opportunities, and meeting new people! Feel free to reach out to
-                me if you have any questions or just want to chat.
+              <Text
+                size={20}
+                variant={"muted-sm"}
+                className="font-normal max-md:text-base"
+              >
+                I&apos;m always open to hearing interesting ideas and meeting
+                new people! Feel free to reach out to me if you have any
+                questions or just want to chat.
               </Text>
             </div>
-            {/* <div className="flex flex-col items-center gap-2 md:gap-4 md:items-end">
-            <Button size={"lg"} className="w-32 px-0">
-              Check out
-            </Button>
-            <div className="p-0.5 rounded bg-gradient-to-r from-gradient-1-from to-gradient-1-to w-40 px-0"> */}
-            <div className="flex flex-col gap-2 md:gap-4 md:items-end justify-around">
+            <div className="flex flex-col gap-2 md:gap-4 md:items-end justify-start">
               <div className="w-full md:w-32 px-0 mx-auto">
                 <Link href={"https://www.calendly.com/vongarcia97/calendar"}>
                   <Button
