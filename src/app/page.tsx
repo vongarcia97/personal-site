@@ -100,9 +100,9 @@ export default function Home() {
         <h2 className="max-w-4xl my-4 text-lg text-center">
           Software Engineer based in NYC
           <br />
-          Currently coding for the leisure travel industry{" "}
-          <FaPersonWalkingLuggage className="inline-block" />
-          <FaPlaneDeparture className="pl-2 inline-block" />
+          currently coding for the leisure travel industry{" "}
+          <FaPersonWalkingLuggage className="inline-block h-6 w-6 animate-bounce" />
+          <FaPlaneDeparture className="pl-2 inline-block h-6 w-6 animate-bounce" />
         </h2>
         <Text
           variant={"muted-lg"}
