@@ -100,7 +100,8 @@ export default function Home() {
         <h2 className="max-w-4xl my-4 text-lg text-center">
           Software Engineer based in NYC
           <br />
-          currently coding for the leisure travel industry{" "}
+          currently coding for a host travel management company (TMC) in the
+          leisure travel industry{" "}
           <FaPersonWalkingLuggage className="inline-block h-6 w-6 animate-bounce" />
           <FaPlaneDeparture className="pl-2 inline-block h-6 w-6 animate-bounce" />
         </h2>
@@ -138,7 +139,7 @@ export default function Home() {
           - a host travel management company (TMC) that specializes in luxury
           leisure travel.
         </Text>
-        <div className="flex flex-col items-center pt-20 mx-4 w-full">
+        <div className="flex flex-col items-center mx-4 w-full">
           <Text variant={"section-name"} className="text-md md:text-lg mx-4">
             MY BREAD & BUTTER STACK 🥯 🧈
           </Text>
@@ -149,7 +150,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="experience" className="space-y-20 pt-20">
+      <section id="experience" className="space-y-20">
         <NumberGradient
           gradient={2}
           number={2}

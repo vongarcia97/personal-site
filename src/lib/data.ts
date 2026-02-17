@@ -4,11 +4,19 @@ import {
   FaCode,
   FaBriefcase,
   FaRightLeft,
+  FaPersonWalkingLuggage,
+  FaLaptopCode,
   FaFutbol,
   FaPlane,
   FaBowlRice,
   FaCarRear,
+  FaPerson,
+  FaUserNurse,
 } from "react-icons/fa6";
+
+import { PiUserSwitchFill } from "react-icons/pi";
+
+import { GiCook } from "react-icons/gi";
 
 const ServiceINITIAL_VALUE = [
   {
@@ -22,32 +30,40 @@ const ServiceINITIAL_VALUE = [
 const Experience = [
   {
     id: 1,
-    title: "AMEX Global Business Travel (GBT)",
+    title: "AMEX GBT - Ovation",
     subtitle:
-      "I work under the Global Partner Solutions (GPS) division, as a SWE for The OvationNetwork",
+      "Software Engineer for The OvationNetwork, a host travel management company (TMC) that specializes in luxury leisure travel.",
     description:
-      "My most notable contribution is solving an organization-wide accounting issue that occurred when we were integrating into a new commission reconciliation program in our Unit4 (Agresso) CentralCommand setup. I am currently working on a dedicated CRM for host travel management companies (TMCs) that will enable their operations to scale in an organized and efficient manner.",
+      "My most notable contribution is creating a solution to anorganization-wide accounting issue that occurred during Ovation's intergation into a new commission reconciliation program for Unit4 (Agresso) CentralCommand setup. I am currently working on a dedicated CRM for host travel management companies (TMCs) that will enable their operations to scale in an organized and efficient manner.",
     date: "March 2023 - Present",
-    icon: React.createElement(FaBriefcase),
+    icon: React.createElement(FaPersonWalkingLuggage),
   },
   {
     id: 2,
-    title: "Codesmith Software Engineering Immersive Program",
-    subtitle:
-      "Learned how to securely piece a back-end to the front-end to make a full stack application",
+    title: "Codesmith.io",
+    subtitle: "Full Stack Software Engineering Immersive Program",
     description:
       "Despite already having a deep understanding of concepts like OOP, closures and recursion, it was at Codesmith where I was able to learn how to apply these concepts in software engineering. The most valuable skill I learned was learning how to approach problems systematically. This was pre-LLMs so I deserve the street creds....",
     date: "2022-23",
-    icon: React.createElement(FaCode),
+    icon: React.createElement(FaLaptopCode),
   },
   {
     id: 3,
     title: "Career Change",
     subtitle: "From healthcare to tech",
     description:
-      "It all started with a 'Hello, world' in Python..... Then started using libraries like pandas and matplotlib..... I was hooked.",
-    date: "2019",
-    icon: React.createElement(FaRightLeft),
+      "It all started when I decided to take 3 CS courses at Hunter College one summer. My first two 'Hello, world(s)' were in Python and C++ and next thing I know, I'm self-teaching myself web development and the JavaScript development ecosystem. It was evident that I've finally found what I want to do with my life.",
+    date: "2021",
+    icon: React.createElement(PiUserSwitchFill),
+  },
+  {
+    id: 4,
+    title: "Private Home Health Aide",
+    subtitle: "Providing care to high net worth clients in their homes",
+    description:
+      "During my time as an undocumented immigrant, I was able to find work as a private home health aide assisting high net worth individuals in their homes with activities of daily living (ADLs).",
+    date: "2018-2022",
+    icon: React.createElement(FaUserNurse),
   },
 ];
 
@@ -55,11 +71,12 @@ const Interests = [
   {
     id: 1,
     title: "Weekend Chef 🍳",
-    subtitle: "Trying out my take on different cuisines on the weekends",
+    subtitle:
+      'I was not kidding when I said I felt comfortable in the "unknown"',
     description:
-      "Whatever I see that makes my mouth water on my Instagram Discover Page or TikTok algo, I try to make it. To give an idea of how daring I am - I've made bao buns from scratch and prepare my own sashimi at home.",
+      "I cook whatever my TikTok or Instagram algorithm suggests that makes my mouth water. To give an idea of how daring I am - I've made bao buns from scratch and prepare my own sashimi at home.",
     date: "Since 2019",
-    icon: React.createElement(FaBowlRice),
+    icon: React.createElement(GiCook),
   },
   {
     id: 2,
