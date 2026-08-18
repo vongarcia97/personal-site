@@ -100,21 +100,18 @@ export default function Home() {
         <h2 className="max-w-4xl my-4 text-lg text-center">
           Software Engineer based in NYC
           <br />
-          currently coding for a host travel management company (TMC) in the
-          leisure travel industry{" "}
+          currently working in the leisure travel industry{" "}
           <FaPersonWalkingLuggage className="inline-block h-6 w-6 animate-bounce" />
           <FaPlaneDeparture className="pl-2 inline-block h-6 w-6 animate-bounce" />
         </h2>
         <Text
           variant={"muted-lg"}
           size={20}
-          className="my-8 text-center max-md:text-base md:mx-12 md:text-xl md:font-normal"
+          className="my-8 text-center max-md:text-base md:mx-24 md:text-xl md:font-normal"
           id="reveal-text"
         >
-          I have a strong foundation in software development fundamentals and
-          driven by constant curiosity. My happy place is in the
-          &quot;unknown&quot; where I can find new challenges that test my
-          creativity and problem-solving skills.
+          My happy place is in the &quot;unknown&quot; where I can find new
+          challenges that test my creativity and problem-solving skills.
         </Text>
       </header>
 
@@ -131,19 +128,19 @@ export default function Home() {
           as="p"
         >
           As my Instagram bio says, I&apos;m either &quot;locked in my room
-          coding, or busy in the kitchen cooking!&quot; Currently, I am a
-          software engineer at{" "}
+          coding, or busy in the kitchen cooking!&quot; Currently, I&apos;m at{" "}
           <a className="text-teal-400" href="https://theovationnetwork.com/">
             The OvationNetwork
           </a>{" "}
-          - a host travel management company (TMC) that specializes in luxury
-          leisure travel.
+          - and when I'm bored, I keep my skills sharp by working on my side
+          project{" "}
+          <a className="text-teal-400" href="https://queue-0.com/">
+            Queue-0
+          </a>
+          !
         </Text>
         <div className="flex flex-col items-center mx-4 w-full">
-          <Text variant={"section-name"} className="text-md md:text-lg mx-4">
-            MY BREAD & BUTTER STACK 🥯 🧈
-          </Text>
-          <Text className="mt-4" variant={"section-description"}>
+          <Text variant={"section-name"} className="text-md md:text-sm mx-4">
             These tools run my life....
           </Text>
           <TechIcon />
@@ -162,7 +159,7 @@ export default function Home() {
               <VerticalTimelineElement
                 contentStyle={{
                   background: "#0A0A0A",
-                  border: "0.5px solid rgba(255, 255, 255, .20)",
+                  border: "0.5px solid rgba(255, 255, 255, 0.2)",
                   boxShadow: "none",
                   borderRadius: "12px",
                 }}
