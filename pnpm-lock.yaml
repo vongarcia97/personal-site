@@ -173,8 +173,8 @@ importers:
         specifier: ^1.8.10
         version: 1.8.10
       '@types/react-vertical-timeline-component':
-        specifier: ^3.3.3
-        version: 3.3.3
+        specifier: ^3.3.6
+        version: 3.3.6
 
 packages:
 
@@ -1080,8 +1080,8 @@ packages:
   '@types/react-scroll@1.8.10':
     resolution: {integrity: sha512-RD4Z7grbdNGOKwKnUBKar6zNxqaW3n8m9QSrfvljW+gmkj1GArb8AFBomVr6xMOgHPD3v1uV3BrIf01py57daQ==}
 
-  '@types/react-vertical-timeline-component@3.3.3':
-    resolution: {integrity: sha512-xmKeQ9TtZLeGtsWQx2im0U79wnC0M2F/FPEAHP7uS3G9SAVgis1XSHzq/mq7XrcbnI9eiZbL7dhiy/TqCuDc7w==}
+  '@types/react-vertical-timeline-component@3.3.6':
+    resolution: {integrity: sha512-OUvyPXRjXvUD/SNLO0CW0GbIxVF32Ios5qHecMSfw6kxnK1cPULD9NV80EuqZ3WmS/s6BgbcwmN8k4ISb3akhQ==}
 
   '@types/react@18.2.21':
     resolution: {integrity: sha512-neFKG/sBAwGxHgXiIxnbm3/AAVQ/cMRS93hvBpg8xYRbeQSPVABp9U2bRnPf0iI4+Ucdv3plSxKK+3CW2ENJxA==}
@@ -3512,7 +3512,7 @@ snapshots:
     dependencies:
       '@types/react': 18.2.21
 
-  '@types/react-vertical-timeline-component@3.3.3':
+  '@types/react-vertical-timeline-component@3.3.6':
     dependencies:
       '@types/react': 18.2.21
 

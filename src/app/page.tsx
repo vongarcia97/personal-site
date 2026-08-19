@@ -132,8 +132,8 @@ export default function Home() {
           <a className="text-teal-400" href="https://theovationnetwork.com/">
             The OvationNetwork
           </a>{" "}
-          - and when I'm bored, I keep my skills sharp by working on my side
-          project{" "}
+          - and when I&apos;m bored, I keep my skills sharp by working on my
+          side project{" "}
           <a className="text-teal-400" href="https://queue-0.com/">
             Queue-0
           </a>
