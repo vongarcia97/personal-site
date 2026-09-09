@@ -43,7 +43,7 @@ const Experience = [
     title: "Codesmith.io",
     subtitle: "Full Stack Software Engineering Immersive Program",
     description:
-      "Despite already having a deep understanding of concepts like OOP, closures and recursion, it was at Codesmith where I was able to learn how to apply these concepts in software engineering. The most valuable skill I learned was learning how to approach problems systematically. This was pre-LLMs so I deserve the street creds....",
+      "Despite already having a deep understanding of concepts like OOP, closures and recursion, it was at Codesmith where I was able to learn how to apply these concepts in software engineering. The most valuable skill I learned was learning how to approach problems systematically. This was pre-LLMs, and I feel very fortunate to have had the opportunity to learn in an environment that was not focused on the latest and greatest technologies and forced me to think critically and work collaboratively.",
     date: "2022-23",
     icon: React.createElement(FaLaptopCode),
   },

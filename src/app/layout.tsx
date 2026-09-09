@@ -14,8 +14,37 @@ const space_grotesk = Space_Grotesk({
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: "Von Garcia - NYC",
-  description: "Just another nerd's website.... but cooler",
+  metadataBase: new URL("https://vongarcia.nyc"),
+  title: "Von Garcia — Software Engineer, Travel Tech",
+  description:
+    "Software engineer at Amex GBT building the systems between Sabre GDS and the back office — commission reconciliation, PNR data, and internal tooling for host travel agencies.",
+  keywords: [
+    "Von Garcia",
+    "software engineer",
+    "travel technology",
+    "Sabre GDS",
+    "TypeScript",
+    "Next.js",
+    "commission reconciliation",
+    "host agency",
+  ],
+  authors: [{ name: "Von Garcia", url: "https://vongarcia.nyc" }],
+  openGraph: {
+    title: "Von Garcia — Software Engineer, Travel Tech",
+    description:
+      "I build the software that sits between a travel booking and the money it generates.",
+    url: "https://vongarcia.nyc",
+    siteName: "Von Garcia",
+    images: [{ url: "/headshot.jpg", width: 400, height: 400 }],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Von Garcia — Software Engineer, Travel Tech",
+    description:
+      "I build the software that sits between a travel booking and the money it generates.",
+  },
 };
 
 export default function RootLayout({
