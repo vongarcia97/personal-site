@@ -52,7 +52,7 @@ const Experience = [
     title: "Career Change",
     subtitle: "From healthcare to tech",
     description:
-      "It all started when I decided to take 3 CS courses at Hunter College one summer. My first two 'Hello, world(s)' were in Python and C++ and next thing I know, I'm self-teaching myself web development and the JavaScript development ecosystem. It was evident that I've finally found what I want to do with my life.",
+      "I spent four years as a private home health aide. I was undocumented at the time, which ruled out both a normal college path and a normal job — so I worked, and I paid attention to the opportunities around technology. When my status changed I took three CS courses at Hunter College one summer, mostly to see whether I'd like it. Two \"Hello, world\"s later — Python, then C++ — I was teaching myself JavaScript on nights and weekends. I haven't stopped since.",
     date: "2021",
     icon: React.createElement(PiUserSwitchFill),
   },
@@ -61,7 +61,7 @@ const Experience = [
     title: "Private Home Health Aide",
     subtitle: "Providing care to high net worth clients in their homes",
     description:
-      "During my time as an undocumented immigrant, I was able to find work as a private home health aide assisting high net worth individuals in their homes with activities of daily living (ADLs).",
+      "Worked as a private home health aide assisting high net worth individuals in their homes with activities of daily living (ADLs).",
     date: "2018-2022",
     icon: React.createElement(FaUserNurse),
   },
